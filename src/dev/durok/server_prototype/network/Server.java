@@ -30,6 +30,7 @@ public class Server implements IServer , IAcceptor {
 
         try {
             mServerSocket = new ServerSocket(mServerPort);
+            mThreadPoolExcutor.submit(mAccceptor);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -53,6 +54,7 @@ public class Server implements IServer , IAcceptor {
     @Override
     public boolean onAcceptor(Socket socket) {
         mClients.put( socket.hashCode() , socket );
+        mThreadPoolExcutor.submit(mAccceptor);
         return true;
     }
 }
