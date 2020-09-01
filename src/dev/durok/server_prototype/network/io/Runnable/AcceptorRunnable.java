@@ -6,12 +6,12 @@ import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-public class Acceptor implements Runnable {
+public class AcceptorRunnable implements Runnable {
 
     private ServerSocket mServerSocket;
     private IAcceptor mAcceptor;
 
-    public Acceptor ( ServerSocket serverSocket , IAcceptor acceptor )
+    public AcceptorRunnable(ServerSocket serverSocket , IAcceptor acceptor )
     {
         mServerSocket = serverSocket;
         mAcceptor = acceptor;
