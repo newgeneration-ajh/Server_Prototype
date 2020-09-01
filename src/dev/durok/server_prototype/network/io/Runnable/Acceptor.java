@@ -1,6 +1,6 @@
-package dev.durok.network.io.Runnable;
+package dev.durok.server_prototype.network.io.Runnable;
 
-import dev.durok.network.io.Interface.IAcceptor;
+import dev.durok.server_prototype.network.io.Interface.IAcceptor;
 
 import java.io.IOException;
 import java.net.ServerSocket;

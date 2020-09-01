@@ -1,4 +1,4 @@
-package dev.durok.network.Interface;
+package dev.durok.server_prototype.network.Interface;
 
 public interface IServer {
     public boolean startServer ();

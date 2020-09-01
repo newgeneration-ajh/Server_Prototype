@@ -1,6 +1,6 @@
-package dev.durok.main;
+package dev.durok.server_prototype.main;
 
-import dev.durok.network.Network;
+import dev.durok.server_prototype.network.Network;
 
 public class Server_Prototype {
     public static void main ( String[] argv ) {

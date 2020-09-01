@@ -1,7 +1,7 @@
-package dev.durok.network;
+package dev.durok.server_prototype.network;
 
 
-import dev.durok.network.Interface.INetwork;
+import dev.durok.server_prototype.network.Interface.INetwork;
 
 public class Network implements INetwork {
     final private String mApplicationSummary;

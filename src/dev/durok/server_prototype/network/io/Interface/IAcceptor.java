@@ -1,4 +1,4 @@
-package dev.durok.network.io.Interface;
+package dev.durok.server_prototype.network.io.Interface;
 
 import java.net.Socket;
 
