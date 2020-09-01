@@ -27,6 +27,7 @@ public class Server implements IServer , IAcceptor {
         mServerPort = portNum;
         mThreadPoolExcutor = (ThreadPoolExecutor) Executors.newFixedThreadPool(10);
         mAccceptorRunnable = new AcceptorRunnable(mServerSocket, this);
+        mClients = new HashMap<Integer , Socket>();
 
         try {
             mServerSocket = new ServerSocket(mServerPort);
