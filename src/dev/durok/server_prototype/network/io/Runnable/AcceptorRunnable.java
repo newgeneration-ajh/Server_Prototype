@@ -11,8 +11,7 @@ public class AcceptorRunnable implements Runnable {
     private ServerSocket mServerSocket;
     private IAcceptor mAcceptor;
 
-    public AcceptorRunnable(ServerSocket serverSocket , IAcceptor acceptor )
-    {
+    public AcceptorRunnable(ServerSocket serverSocket , IAcceptor acceptor ) {
         mServerSocket = serverSocket;
         mAcceptor = acceptor;
     }
